@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CaracteristicasDinamicasEjemplo</string>
+    <string name="title_caracteristica_ejemplo">Demo Caracteristica</string>
+    <string name="title_caracteristica_camara">Modulo Camara</string>
+    <string name="title_caracteristica_tarjeta">caracteristica_tarjeta</string>
+    <string name="title_caracteristica_video_player">VideoPlayer</string>
+</resources>

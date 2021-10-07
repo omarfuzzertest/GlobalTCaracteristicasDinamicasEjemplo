@@ -1,0 +1,5 @@
+include ':caracteristica_tarjeta'
+include ':caracteristica_camara'
+include ':caracteristica_video_player'
+include ':app'
+rootProject.name = "CaracteristicasDinamicasEjemplo"

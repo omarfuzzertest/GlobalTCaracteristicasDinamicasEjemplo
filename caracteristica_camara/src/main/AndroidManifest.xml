@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="omar.fuzzer.caracteristica_camara">
+
+    <!-- Declare features -->
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- Declare permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <dist:module
+        dist:instant="false"
+        dist:title="@string/title_caracteristica_camara">
+        <dist:delivery>
+            <dist:on-demand />
+        </dist:delivery>
+
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <application>
+        <activity android:name="omar.fuzzer.caracteristica_camara.CamaraActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
