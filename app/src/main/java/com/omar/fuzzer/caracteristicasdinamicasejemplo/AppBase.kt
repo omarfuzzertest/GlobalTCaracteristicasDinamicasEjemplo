@@ -1,10 +1,9 @@
 package com.omar.fuzzer.caracteristicasdinamicasejemplo
 
-import android.app.Application
 import android.content.Context
 import com.google.android.play.core.splitcompat.SplitCompatApplication
 
-public class AppBase : SplitCompatApplication() {
+class AppBase : SplitCompatApplication() {
 companion object {
    lateinit var context: Context
 
