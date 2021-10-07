@@ -27,8 +27,6 @@ class OnDemandInstallManagerUtil(var activity: AppCompatActivity,var context: Co
 
         mensaje = dialogo("Iniciando $nameModule")
 
-
-
         manager.registerListener(listener)
         if (manager.installedModules.contains(nameModule)) { //la caracteristica ya esta instalada y se prcede a abrirla
             Log.e("#--->","Modulo instalado")
@@ -49,8 +47,6 @@ class OnDemandInstallManagerUtil(var activity: AppCompatActivity,var context: Co
 
 
     private val listener = SplitInstallStateUpdatedListener { state ->
-        val multiInstall = state.moduleNames().size > 1
-        val names = state.moduleNames().joinToString(" - ")
         when (state.status()) {
             SplitInstallSessionStatus.DOWNLOADING -> {
                 displayLoadingState(state, "DESCARGANDO")
